@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">GUIPRESS</a>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <% categories.forEach(categories => {%>
+            <li class="nav-item">
+                <a class="nav-link" href="/category/<%= categories.slug %>"><%= categories.title %></a>
+            </li>
+        <% }) %>
+    </ul>
+</nav>
